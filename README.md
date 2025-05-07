@@ -38,10 +38,9 @@ La aplicación está dividida en múltiples microservicios comunicándose a trav
 ## ⚙️ Requisitos Previos
 
 - Java 17+
-- Node.js y npm
-- Docker (opcional pero recomendado)
+- AWS
 - RabbitMQ (puede ejecutarse con Docker)
-- PostgreSQL o MySQL
+- PostgreSQL, MySQL, MongoDB
 - Cuenta con acceso a Google Gemini API
 
 ## 🚀 Cómo Ejecutar
