@@ -20,6 +20,8 @@ target/
 *.ipr
 /.env
 /src/main/resources/application.yml
+/src/main/resources/application.yml
+activity-service/src/main/resources/application.yml
 
 
 ### NetBeans ###

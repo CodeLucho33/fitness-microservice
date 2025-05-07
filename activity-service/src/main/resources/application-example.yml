@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: activity-service
+  data:
+    mongodb:
+      uri: ${DB_URL_ACTIVITY}
+      database: ${DB_NAME}
+
+server:
+  port: ${SERVER_PORT}
