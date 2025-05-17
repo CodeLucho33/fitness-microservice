@@ -4,11 +4,12 @@ import com.lucho.code.fitness.user_service.dto.RegisterRequest;
 import com.lucho.code.fitness.user_service.dto.UserResponse;
 import com.lucho.code.fitness.user_service.model.User;
 import com.lucho.code.fitness.user_service.repository.UserRepository;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 @Service
+@Slf4j
 @RequiredArgsConstructor
 public class UserService {
     private final UserRepository userRepository;
@@ -47,8 +48,8 @@ public class UserService {
         userResponse.setUpdatedAt(user.getUpdatedAt());
         return userResponse;
     }
-
     public Boolean existByUserId(String userId) {
+        log.info("Calling User validatio API for user id: {}", userId);
         return userRepository.existsById(userId);
     }
 }
